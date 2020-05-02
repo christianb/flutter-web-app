@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterwebapp/AnimatedProgressIndicator.dart';
 
 import 'LoginForm.dart';
 
@@ -39,7 +40,7 @@ class LoginFormState extends State<LoginForm> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          LinearProgressIndicator(value: _formProgress),
+          AnimatedProgressIndicator(value: _formProgress),
           Text('Sign Up', style: Theme
               .of(context)
               .textTheme
